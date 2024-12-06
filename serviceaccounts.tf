@@ -1,6 +1,6 @@
 ## SERVICE ACCOUNTS
 module "service_accounts" {
-  source        = "terraform-google-modules/service-accounts/google"
+  source        = "github.com/the1bit/terraform-google-service-accounts"
   project_id    = var.project-id
   prefix        = "viewer-sa"
   names         = ["dev", "qa","stage","prod"]
